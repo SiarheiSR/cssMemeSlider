@@ -1,0 +1,20 @@
+:root {
+	--bg-color:#ececec;
+	--control-color: #4176bb;
+	--control-hover: #f0e2e2;
+	--control-active: #be4040;
+}
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: var(--bg-color);
+}
