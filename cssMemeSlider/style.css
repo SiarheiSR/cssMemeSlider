@@ -1,7 +1,7 @@
 :root {
 	--bg-color:#ececec;
 	--control-color: #4176bb;
-	--control-hover: #f0e2e2;
+	--control-hover: #eccece;
 	--control-active: #be4040;
 }
 
@@ -101,12 +101,6 @@ input {
 	padding: 10px;
 	cursor: pointer;
 }
-.controls__item:hover .control__btn{
-	color: var(--control-hover);
-}
-.controls__item:active .control__btn{
-	color: var(--control-active);
-}
 
 [class*= "control__btn"] {
 	aspect-ratio: 1;
@@ -116,6 +110,13 @@ input {
 	border-radius: 50%;
 	transition: color .2s;
 	cursor: pointer;
+}
+
+.controls__item:hover [class*= "control__btn"] {
+	color: var(--control-hover);
+}
+.controls__item:active [class*= "control__btn"] {
+	color: var(--control-active);
 }
 
 @media (max-width: 768px) {
