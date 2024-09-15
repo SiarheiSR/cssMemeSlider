@@ -95,3 +95,31 @@ input {
 #btn-4:checked ~.slider__controls .control__btn-4 {
 	background-color: transparent;
 }
+
+.controls__item {
+	width: 45px;
+	padding: 10px;
+	cursor: pointer;
+}
+.controls__item:hover .control__btn{
+	color: var(--control-hover);
+}
+.controls__item:active .control__btn{
+	color: var(--control-active);
+}
+
+[class*= "control__btn"] {
+	aspect-ratio: 1;
+	color: var(--control-color);
+	background-color: currentColor;
+	border: 2px solid currentColor;
+	border-radius: 50%;
+	transition: color .2s;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.slider__controls {
+		justify-content: center;
+	}
+}
