@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Meme Slider</title>
+	<link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="slider">
+			<input type="radio" name="btn" id="btn-1" checked>
+			<input type="radio" name="btn" id="btn-2">
+			<input type="radio" name="btn" id="btn-3">
+			<input type="radio" name="btn" id="btn-4">
+			<div class="slider__body">
+				<div class="slider__item item-1">
+					<div style="--color: aqua">1</div>
+				</div>
+				<div class="slider__item item-2">
+					<div style="--color: beige">2</div>
+				</div>
+				<div class="slider__item item-3">
+					<div style="--color: cadetblue">3</div>
+				</div>
+				<div class="slider__item item-4">
+					<div style="--color: darkmagenta">4</div>
+				</div>
+			</div>
+			<div class="slider__controls">
+				<label class="controls__item" for="btn-1">
+					<div class="control__btn-1"></div>
+				</label>
+				<label class="controls__item" for="btn-2">
+					<div class="control__btn-2"></div>
+				</label>
+				<label class="controls__item" for="btn-3">
+					<div class="control__btn-3"></div>
+				</label>
+				<label class="controls__item" for="btn-4">
+					<div class="control__btn-4"></div>
+				</label>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
